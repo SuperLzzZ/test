@@ -1,0 +1,19 @@
+
+version = '1.0'
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.sgcc.uap.Application'
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'lib'
+    }
+}
+
+dependencies {
+   //引入第三方jar包示例:引入一个jar包 com.sgcc.uap.demo-1.0.0.RELEASE.jar 
+   //group:包名，name：jar包名称，version：版本号
+   //compile group: 'com.sgcc.uap', name: 'demo', version: '1.0.0.RELEASE'
+}
